@@ -1,168 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    
     <title>Профиль Мага</title>
-    <style>
-        body {
-            background: url('https://img.goodfon.ru/original/1920x1080/4/c7/kosmos-svet-zvezd-planeta-fantasticheskii-art-prostranstvo-s.jpg') no-repeat center/cover;
-            background-attachment: fixed;
-            color: #f1e5e5;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            overflow: hidden;
-            max-width: 1000px;
-            width: 90%;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-            margin-top: 50px;
-            padding: 30px;
-        }
-        .profile {
-            padding-bottom: 30px;
-        }
-        .profile h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-        .profile p {
-            font-size: 16px;
-            color: #ddd;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 24px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #ffb3b3;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-            list-style: none;
-            padding: 0;
-        }
-        .grid li {
-            background: rgba(240, 220, 180, 0.8);
-            padding: 10px;
-            border-radius: 8px;
-            color: #5b1c1c;
-            font-size: 14px;
-        }
-        .grid li strong {
-            color: #8b2a2a;
-        }
-        .top-image {
-            width: 100%;
-            height: 350px;
-            background: url('https://kartinki.pics/uploads/posts/2021-04/1618118700_46-p-mag-ognya-fentezi-47.jpg') no-repeat center/cover;
-            border-radius: 15px;
-        }
-        .image-container {
-            margin-top: 20px;
-            flex-shrink: 0;
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 15px;
-            transition: transform 0.3s ease;
-        }
-        .image-container img:hover {
-            transform: scale(1.1);
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="top-image"></div> <!-- Вставка верхней картинки -->
+<body  text="white"  style="font-family: Arial, sans-serif; text-align: center; padding: 20px;
+background: url('https://img.goodfon.ru/original/1920x1080/4/c7/kosmos-svet-zvezd-planeta-fantasticheskii-art-prostranstvo-s.jpg') no-repeat center/cover; 
+background-attachment: fixed;">
+    >
 
-        <div class="profile">
-            <h1>Профиль Мага</h1>
-            <a href="gardian.html">1</a><a href="ASAD.html">2</a><a href="Voin.html">3</a>
-            <p>Мастер магических искусств, способный манипулировать стихиями и применять древние заклинания для победы над врагами.</p>
-            
-            <h2>Статы</h2>
-            <ul class="grid">
-                <li><strong>HP:</strong> 80</li>
-                <li><strong>MP:</strong> 200</li>
-                <li><strong>Сила:</strong> 40</li>
-                <li><strong>Ловкость:</strong> 50</li>
-                <li><strong>Интеллект:</strong> 150</li>
-                <li><strong>Выносливость:</strong> 60</li>
-                <li><strong>Харизма:</strong> 70</li>
-                <li><strong>Сила воли:</strong> 90</li>
-                <li><strong>Сопротивление магии:</strong> 95</li>
-                <li><strong>Восст. маны:</strong> 15</li>
-                <li><strong>Атака:</strong> 50</li>
-                <li><strong>Защита:</strong> 40</li>
-                <li><strong>Маг. сила:</strong> 180</li>
-                <li><strong>Общ. сопротивление:</strong> 60</li>
-                <li><strong>Элементарная магия:</strong> 100</li>
-                <li><strong>Поглощение HP:</strong> 15%</li>
-                <li><strong>Крит. урон:</strong> 120%</li>
-                <li><strong>Шанс уклонения:</strong> 15%</li>
-                <li><strong>Шанс блока:</strong> 8%</li>
-                <li><strong>Общий урон:</strong> 130</li>
-                <li><strong>Аура:</strong> 20</li>
-                <li><strong>Скорость:</strong> 35</li>
-            </ul>
-            
-            <h2>Навыки</h2>
-            <ul class="grid">
-                <li>Огненные Шары</li>
-                <li>Ледяная Стена</li>
-                <li>Молния</li>
-                <li>Призыв Стихии</li>
-                <li>Магический Щит</li>
-                <li>Исцеляющее Заклинание</li>
-                <li>Темные Заклинания</li>
-                <li>Астральный Поток</li>
-                <li>Вихрь Стихий</li>
-                <li>Энергетический Взрыв</li>
-                <li>Магия Времени</li>
-                <li>Призыв Астрального Духа</li>
-                <li>Тёмная Лавина</li>
-                <li>Удар Магнитной Бури</li>
-                <li>Превращение</li>
-                <li>Лечебный Поток</li>
-            </ul>
-            
-            <h2>Таланты</h2>
-            <ul class="grid">
-                <li>Магическое Мастерство</li>
-                <li>Поглощение Энергии</li>
-                <li>Шаг в Пространстве</li>
-                <li>Бессмертная Воля</li>
-                <li>Мастер Стихий</li>
-                <li>Власть Времени</li>
-                <li>Темный Владыка</li>
-                <li>Невидимость</li>
-            </ul>
-        </div>
+    <h1>Профиль Мага</h1>
+    <p>
+        <a href="gardian.html">1</a> |
+        <a href="ASAD.html">2</a> |
+        <a href="Voin.html">3</a>
+    </p>
+    
+    <p><i>Мастер магических искусств, способный манипулировать стихиями и применять древние заклинания для победы над врагами.</i></p>
 
-        <div class="image-container">
-            <a href="helow.html">
-            <img src="https://img.freepik.com/premium-photo/battlemage-magical-fantasy-setting-game-character-design_31965-104820.jpg" alt="Маг"> <!-- Вставка второй картинки -->
+    <p>
+        <a href="helow.html">
+            <img src="https://img.freepik.com/premium-photo/battlemage-magical-fantasy-setting-game-character-design_31965-104820.jpg" 
+                 alt="Маг" width="300" height="auto" border="2">
         </a>
-        </div>
-    </div>
+    </p>
+
+    <h2>Статы</h2>
+    <table align="center" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+        <tr><td><b>HP</b></td><td>80</td></tr>
+        <tr><td><b>MP</b></td><td>200</td></tr>
+        <tr><td><b>Сила</b></td><td>40</td></tr>
+        <tr><td><b>Ловкость</b></td><td>50</td></tr>
+        <tr><td><b>Интеллект</b></td><td>150</td></tr>
+        <tr><td><b>Выносливость</b></td><td>60</td></tr>
+        <tr><td><b>Харизма</b></td><td>70</td></tr>
+        <tr><td><b>Сила воли</b></td><td>90</td></tr>
+        <tr><td><b>Сопротивление магии</b></td><td>95</td></tr>
+        <tr><td><b>Восст. маны</b></td><td>15</td></tr>
+    </table>
+
+    <h2>Навыки</h2>
+    <table align="center" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+        <tr><td>Огненные Шары</td></tr>
+        <tr><td>Ледяная Стена</td></tr>
+        <tr><td>Молния</td></tr>
+        <tr><td>Призыв Стихии</td></tr>
+        <tr><td>Магический Щит</td></tr>
+        <tr><td>Исцеляющее Заклинание</td></tr>
+        <tr><td>Темные Заклинания</td></tr>
+        <tr><td>Астральный Поток</td></tr>
+        <tr><td>Вихрь Стихий</td></tr>
+        <tr><td>Энергетический Взрыв</td></tr>
+        <tr><td>Магия Времени</td></tr>
+        <tr><td>Призыв Астрального Духа</td></tr>
+        <tr><td>Тёмная Лавина</td></tr>
+        <tr><td>Удар Магнитной Бури</td></tr>
+        <tr><td>Превращение</td></tr>
+        <tr><td>Лечебный Поток</td></tr>
+    </table>
+
+    <h2>Таланты</h2>
+    <table align="center" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+        <tr><td>Магическое Мастерство</td></tr>
+        <tr><td>Поглощение Энергии</td></tr>
+        <tr><td>Шаг в Пространстве</td></tr>
+        <tr><td>Бессмертная Воля</td></tr>
+        <tr><td>Мастер Стихий</td></tr>
+        <tr><td>Власть Времени</td></tr>
+        <tr><td>Темный Владыка</td></tr>
+        <tr><td>Невидимость</td></tr>
+    </table>
+
 </body>
 </html>

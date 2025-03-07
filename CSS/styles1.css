@@ -1,4 +1,4 @@
-/* General Styling for Body */
+
 body {
     font-family: Arial, sans-serif;
     background: url('https://img.goodfon.ru/original/1920x1080/4/c7/kosmos-svet-zvezd-planeta-fantasticheskii-art-prostranstvo-s.jpg') no-repeat center/cover;
@@ -16,7 +16,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Navigation Styling */
+
 a {
     color: #FF9800;
     font-size: 16px;
@@ -28,7 +28,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Paragraph Styling */
+
 p {
     font-size: 18px;
     line-height: 1.6;
@@ -38,15 +38,16 @@ p {
     font-style: italic;
 }
 
-/* Image Styling */
+
 img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    border: 2px solid #444;
+    border: 2px solid #f01010;
+    box-shadow: 0 10px 20px rgba(235, 173, 3, 0.5);
 }
 
-/* Container for Stats, Skills, and Talents */
+
 .table-container {
     display: flex;
     justify-content: space-evenly;
@@ -61,31 +62,31 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 16px rgba(5, 194, 219, 0.5);
 }
 
 table th,
 table td {
     padding: 10px;
     text-align: center;
-    color: #FF9800;
+    color: #0ab8e4;
 }
 
 table tr:nth-child(even) {
-    background-color: #333333;
+    background-color: #aa6a09;
 }
 
 table th {
-    background-color: #444444;
-    color: #ffffff;
+    background-color: #c77b7b;
+    color: #bab7e7;
 }
 
-/* Hover Effect for Table Rows */
+
 table tr:hover {
-    background-color: #555555;
+    background-color: #110803a6;
 }
 
-/* Section Headers */
+
 h2 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -93,17 +94,10 @@ h2 {
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Footer Styling */
-footer {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    color: #ddd;
-}
 
-/* Responsive Design */
+
+
+
 @media (max-width: 768px) {
     .table-container {
         flex-direction: column;

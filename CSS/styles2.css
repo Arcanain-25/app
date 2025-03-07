@@ -43,7 +43,8 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    border: 2px solid #444;
+    border: 2px solid #d9e70f;
+    box-shadow: 0 8px 16px rgba(212, 5, 5, 0.5);
 }
 
 /* Container for Stats, Skills, and Talents */
@@ -56,33 +57,33 @@ img {
 }
 
 table {
-    background-color: #222222;
+    background-color: #e7be71;
     border-radius: 10px;
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 16px rgba(158, 7, 7, 0.5);
 }
 
 table th,
 table td {
     padding: 10px;
     text-align: center;
-    color: #FF9800;
+    color: #cc390c;
 }
 
 table tr:nth-child(even) {
-    background-color: #333333;
+    background-color: #ccb448;
 }
 
 table th {
-    background-color: #444444;
+    background-color: #ac1111;
     color: #ffffff;
 }
 
 /* Hover Effect for Table Rows */
 table tr:hover {
-    background-color: #555555;
+    background-color: #ecb3184f;
 }
 
 /* Section Headers */
@@ -90,18 +91,10 @@ h2 {
     font-size: 24px;
     margin-bottom: 15px;
     color: #FF7043;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 6px rgba(94, 3, 3, 0.5);
 }
 
-/* Footer Styling */
-footer {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    color: #ddd;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

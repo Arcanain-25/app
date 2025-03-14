@@ -117,3 +117,22 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('talents').innerHTML = createLevelRows(talentsData);
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a"); // Все ссылки
+    const loadingScreen = document.getElementById("loading-screen");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (event) {
+            if (this.target === "_blank" || this.href.startsWith("mailto:") || this.href.startsWith("#")) {
+                return; // Игнорируем внешние ссылки и якоря
+            }
+            event.preventDefault(); // Остановить мгновенный переход
+
+            loadingScreen.classList.add("active"); // Показать экран загрузки
+
+            setTimeout(() => {
+                window.location.href = this.href; // Переход на новую страницу
+            }, 1500); // Время ожидания перед переходом (1.5 секунды)
+        });
+    });
+});

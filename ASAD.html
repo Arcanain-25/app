@@ -1,80 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профиль Воина</title>
     <link rel="stylesheet" href="CSS/styles4.css">
 </head>
-<body  text="white"  style="font-family: Arial, sans-serif; text-align: center; padding: 20px; 
-background: url('https://img1.akspic.ru/attachments/crops/0/0/7/0/5/150700/150700-kosmos-nebo-elektrik-graficeskij_dizajn-astronomicheskij_obekt-1920x1080.jpg') no-repeat center/cover; 
-background-attachment: fixed;">
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="https://www.desktophut.com/files/PQd0MlCxSMwmEeM_Demon-Knight-4K_1_092553.mp4" type="video/mp4">
+    </video>
 
-    <h1> Воин 1 уровня</h1>
+    <h1>Воин 1 уровня</h1>
     <p>
         <a href="gardian.html">Профиль Некроманта</a> |
         <a href="ASAD.html">Профиль Воина</a> |
-        <a href="Voin.html">Профиль Целителя</a>|
-        <a href="hol.html">Профиль Мага</a>|
+        <a href="Voin.html">Профиль Целителя</a> |
+        <a href="hol.html">Профиль Мага</a>
     </p>
-    
-    <p><i>Могущественный воин, обладающий невероятной силой и мастерством в бою. Его цель — защищать свои земли и уничтожать врагов в жестоких сражениях.</i></p>
+
+    <p class="reveal"><i>Могущественный воин, владеющий искусством разрушения и контролем стихий.</i></p>
 
     <p>
         <a href="helow.html">
-            <img src="https://99px.ru/sstorage/53/2018/02/tmb_220030_469287.jpg" 
-                 alt="Воин" width="300" height="auto" border="2">
+            <img id="warrior-img" src="https://99px.ru/sstorage/53/2018/02/tmb_220030_469287.jpg" alt="Воин" width="300" border="2">
         </a>
     </p>
 
-    <table width="60%" align="center">
+    <table width="80%" align="center">
         <tr valign="top">
             <td align="center" width="33%">
                 <h2>Статы</h2>
-                <table border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
-        <tr><td><b>HP</b></td><td>200</td></tr>
-        <tr><td><b>MP</b></td><td>50</td></tr>
-        <tr><td><b>Сила</b></td><td>150</td></tr>
-        <tr><td><b>Ловкость</b></td><td>80</td></tr>
-        <tr><td><b>Интеллект</b></td><td>40</td></tr>
-        <tr><td><b>Выносливость</b></td><td>120</td></tr>
-        <tr><td><b>Харизма</b></td><td>60</td></tr>
-        <tr><td><b>Сила воли</b></td><td>100</td></tr>
-        <tr><td><b>Сопротивление магии</b></td><td>40</td></tr>
-        <tr><td><b>Восст. маны</b></td><td>5</td></tr>
-    </table>
+                <table id="stats" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+                    <tr><td><b>HP</b></td><td>200</td></tr>
+                    <tr><td><b>MP</b></td><td>500</td></tr>
+                    <tr><td><b>Сила</b></td><td>200</td></tr>
+                    <tr><td><b>Ловкость</b></td><td>80</td></tr>
+                    <tr><td><b>Интеллект</b></td><td>100</td></tr>
+                    <tr><td><b>Выносливость</b></td><td>150</td></tr>
+                    <tr><td><b>Харизма</b></td><td>50</td></tr>
+                    <tr><td><b>Сила воли</b></td><td>90</td></tr>
+                    <tr><td><b>Сопротивление магии</b></td><td>60</td></tr>
+                    <tr><td><b>Восст. маны</b></td><td>5</td></tr>
+                    <tr><td><b>Точность</b></td><td>80</td></tr>
+                    <tr><td><b>Лидерство</b></td><td>65</td></tr>
+                    <tr><td><b>Страх</b></td><td>0</td></tr>
+                    <tr><td><b>Скорость реакции</b></td><td>60</td></tr>
+                    <tr><td><b>Воскрешение</b></td><td>5</td></tr>
+                    <tr><td><b>Адаптация</b></td><td>50</td></tr>
+                </table>
             </td>
-    <td align="center" width="33%">
-        <h2>Навыки</h2>
-        <table border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
-        <tr><td>Меч Воина</td></tr>
-        <tr><td>Таран</td></tr>
-        <tr><td>Щит Защиты</td></tr>
-        <tr><td>Блокировка Удара</td></tr>
-        <tr><td>Атака Силой</td></tr>
-        <tr><td>Грозовой Удар</td></tr>
-        <tr><td>Кровавая Атака</td></tr>
-        <tr><td>Боевой Крик</td></tr>
-        <tr><td>Мощный Порыв</td></tr>
-        <tr><td>Ярость Воина</td></tr>
-        <tr><td>Неудержимый Рывок</td></tr>
-        <tr><td>Удар Клинком</td></tr>
-        <tr><td>Огненный Меч</td></tr>
-        <tr><td>Защита Щитом</td></tr>
-        <tr><td>Перехват Удара</td></tr>
-        <tr><td>Боевая Стойкость</td></tr>
+
+            <td align="center" width="33%">
+                <h2>Навыки</h2>
+                <table id="skills" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+                    <tr><td class="skill" data-skill="Меч Титанов">Меч Титанов</td></tr>
+                    <tr><td class="skill" data-skill="Гнев Воина">Гнев Воина</td></tr>
+                    <tr><td class="skill" data-skill="Разрушитель Земель">Разрушитель Земель</td></tr>
+                    <tr><td class="skill" data-skill="Удар Бури">Удар Бури</td></tr>
+                    <tr><td class="skill" data-skill="Вихрь Стали">Вихрь Стали</td></tr>
+                    <tr><td class="skill" data-skill="Молния Разрушителя">Молния Разрушителя</td></tr>
+                    <tr><td class="skill" data-skill="Грозовая Атака">Грозовая Атака</td></tr>
+                    <tr><td class="skill" data-skill="Огненный Шторм">Огненный Шторм</td></tr>
+                    <tr><td class="skill" data-skill="Танец Лезвий">Танец Лезвий</td></tr>
+                    <tr><td class="skill" data-skill="Молниеносный Удар">Молниеносный Удар</td></tr>
+                    <tr><td class="skill" data-skill="Небесный Клинок">Небесный Клинок</td></tr>
+                    <tr><td class="skill" data-skill="Разрушение Щита">Разрушение Щита</td></tr>
+                    <tr><td class="skill" data-skill="Удар Смерти">Удар Смерти</td></tr>
+                    <tr><td class="skill" data-skill="Смертоносный Прыжок">Смертоносный Прыжок</td></tr>
+                    <tr><td class="skill" data-skill="Ярость Буревестника">Ярость Буревестника</td></tr>
+                    <tr><td class="skill" data-skill="Удар Вечного Воина">Удар Вечного Воина</td></tr>
+                </table>
+            </td>
+
+            <td align="center" width="33%">
+                <h2>Таланты</h2>
+                <table id="talents" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+                    <tr><td class="talent" data-talent="Сила Древних Богов">Сила Древних Богов</td></tr>
+                    <tr><td class="talent" data-talent="Аура Молнии">Аура Молнии</td></tr>
+                    <tr><td class="talent" data-talent="Владыка Бури">Владыка Бури</td></tr>
+                    <tr><td class="talent" data-talent="Печать Вечности">Печать Вечности</td></tr>
+                    <tr><td class="talent" data-talent="Железный Щит">Железный Щит</td></tr>
+                    <tr><td class="talent" data-talent="Танец Огня">Танец Огня</td></tr>
+                    <tr><td class="talent" data-talent="Молниеносная Сила">Молниеносная Сила</td></tr>
+                    <tr><td class="talent" data-talent="Воскрешение Титановых Воинов">Воскрешение Титановых Воинов</td></tr>
+                    <tr><td class="talent" data-talent="Гроза Империй">Гроза Империй</td></tr>
+                    <tr><td class="talent" data-talent="Щит Бессмертного">Щит Бессмертного</td></tr>
+                    <tr><td class="talent" data-talent="Гнев Небес">Гнев Небес</td></tr>
+                    <tr><td class="talent" data-talent="Меч Судьбы">Меч Судьбы</td></tr>
+                    <tr><td class="talent" data-talent="Темный Ритуал Воителя">Темный Ритуал Воителя</td></tr>
+                    <tr><td class="talent" data-talent="Кровавый Ритуал">Кровавый Ритуал</td></tr>
+                    <tr><td class="talent" data-talent="Тотем Грома">Тотем Грома</td></tr>
+                    <tr><td class="talent" data-talent="Око Бури">Око Бури</td></tr>
+                </table>
+            </td>
+        </tr>
     </table>
-    </td>
-    <td align="center" width="33%">
-        <h2>Таланты</h2>
-        <table border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
-        <tr><td>Мастер Боя</td></tr>
-        <tr><td>Регенерация HP</td></tr>
-        <tr><td>Щит Непобедимости</td></tr>
-        <tr><td>Гнев Воина</td></tr>
-        <tr><td>Лидерство</td></tr>
-        <tr><td>Безстрашие</td></tr>
-        <tr><td>Мощь Титанов</td></tr>
-        <tr><td>Дух Война</td></tr>
-    </table>
-    </td>
+
+    <div id="tooltip" style="position:absolute; background-color:#333; color:#fff; padding:10px; border-radius:5px; visibility:hidden;">
+    </div>
+
+    <div id="loading-screen">
+        <img src="https://png.pngtree.com/element_our/png_detail/20180910/skull-fire-vecto-png_88848.jpg" alt="Череп" class="skull-loader">
+    </div>
+
 </body>
+<script src="JS/script3.js" defer></script>
+<script src="JS/data3.js" defer></script>
 </html>

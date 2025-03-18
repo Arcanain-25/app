@@ -1,84 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Профиль Целителя</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль Целителя </title>
     <link rel="stylesheet" href="CSS/styles2.css">
 </head>
-<body text="white"  style="font-family: Arial, sans-serif; text-align: center; padding: 20px; 
-background: url('https://images.wallpaperscraft.ru/image/single/astronavt_portal_neon_141352_1920x1080.jpg') no-repeat center/cover; 
-background-attachment: fixed;">
+<body>
+    <!-- Видеофон -->
+    <video autoplay muted loop id="bg-video">
+        <source src="https://www.desktophut.com/files/5vABYiDWSDTVzVo_Road%20to%20Baldurs%20Gate.mp4" type="video/mp4">
+    </video>
 
-    <h1>Целителя 1 уровня</h1>
+    <h1>Целитель 1 уровня</h1>
     <p>
         <a href="gardian.html">Профиль Некроманта</a> |
         <a href="ASAD.html">Профиль Воина</a> |
-        <a href="Voin.html">Профиль Целителя</a>|
-        <a href="hol.html">Профиль Мага</a>|
+        <a href="Voin.html">Профиль Целителя</a> |
+        <a href="hol.html">Профиль Мага</a>
     </p>
-    
-    <p><i>Маг, обладающий силой исцеления и защиты. Использует светлую магию для восстановления здоровья союзников и защиты от темных сил.</i></p>
+
+    <p class="reveal"><i>Маг, обладающий могущественной силой исцеления и защиты. Он использует светлую магию для восстановления здоровья союзников и защиты от темных сил.</i></p>
 
     <p>
         <a href="helow.html">
-            <img src="https://dirtcheapdungeons.com/cdn/shop/articles/DALL_E_2023-12-13_07.07.48_-_An_image_of_a_wise_and_benevolent_cleric_from_a_fantasy_setting_wearing_ornate_divine-inspired_armor_that_radiates_a_soft_golden_light._The_cleric.png?v=1702469300" 
-                 alt="Целитель" width="300" height="auto" border="2">
+            <img id="healer-img" src="https://dirtcheapdungeons.com/cdn/shop/articles/DALL_E_2023-12-13_07.07.48_-_An_image_of_a_wise_and_benevolent_cleric_from_a_fantasy_setting_wearing_ornate_divine-inspired_armor_that_radiates_a_soft_golden_light._The_cleric.png?v=1702469300" alt="Целитель" width="300" border="2">
         </a>
     </p>
-    <table width="60%" align="center">
+
+    <table width="80%" align="center">
         <tr valign="top">
             <td align="center" width="33%">
                 <h2>Статы</h2>
-                <table border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
-
-    
-        <tr><td><b>HP</b></td><td>150</td></tr>
-        <tr><td><b>MP</b></td><td>200</td></tr>
-        <tr><td><b>Сила</b></td><td>40</td></tr>
-        <tr><td><b>Ловкость</b></td><td>60</td></tr>
-        <tr><td><b>Интеллект</b></td><td>150</td></tr>
-        <tr><td><b>Выносливость</b></td><td>80</td></tr>
-        <tr><td><b>Харизма</b></td><td>90</td></tr>
-        <tr><td><b>Сила воли</b></td><td>120</td></tr>
-        <tr><td><b>Сопротивление магии</b></td><td>100</td></tr>
-        <tr><td><b>Восст. маны</b></td><td>15</td></tr>
-    </table>
+                <table id="stats" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+                    <tr><td><b>HP</b></td><td>150</td></tr>
+                    <tr><td><b>MP</b></td><td>400</td></tr>
+                    <tr><td><b>Сила</b></td><td>50</td></tr>
+                    <tr><td><b>Ловкость</b></td><td>70</td></tr>
+                    <tr><td><b>Интеллект</b></td><td>200</td></tr>
+                    <tr><td><b>Выносливость</b></td><td>100</td></tr>
+                    <tr><td><b>Харизма</b></td><td>90</td></tr>
+                    <tr><td><b>Сила воли</b></td><td>110</td></tr>
+                    <tr><td><b>Сопротивление магии</b></td><td>120</td></tr>
+                    <tr><td><b>Восст. маны</b></td><td>20</td></tr>
+                    <tr><td><b>Точность</b></td><td>60</td></tr>
+                    <tr><td><b>Лидерство</b></td><td>80</td></tr>
+                    <tr><td><b>Удача</b></td><td>50</td></tr>
+                    <tr><td><b>Скорость реакции</b></td><td>70</td></tr>
+                    <tr><td><b>Адаптация</b></td><td>60</td></tr>
+                   
+                </table>
             </td>
 
             <td align="center" width="33%">
                 <h2>Навыки</h2>
-                <table border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
-        <tr><td>Исцеление</td></tr>
-        <tr><td>Благословение</td></tr>
-        <tr><td>Светлый Щит</td></tr>
-        <tr><td>Исцеляющая Аура</td></tr>
-        <tr><td>Защита от Темных Сил</td></tr>
-        <tr><td>Воскрешение</td></tr>
-        <tr><td>Лечебный Поток</td></tr>
-        <tr><td>Магия Света</td></tr>
-        <tr><td>Очищение от Проклятий</td></tr>
-        <tr><td>Световой Удар</td></tr>
-        <tr><td>Звезда Исцеления</td></tr>
-        <tr><td>Восстановление</td></tr>
-        <tr><td>Магия Лечения</td></tr>
-        <tr><td>Магия Возрождения</td></tr>
-        <tr><td>Светлый Вихрь</td></tr>
-        <tr><td>Целительная Волна</td></tr>
-    </table>
+                <table id="skills" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+                    <tr><td class="skill" data-skill="Священная Волна">Священная Волна</td></tr>
+                    <tr><td class="skill" data-skill="Лечебный Поток">Лечебный Поток</td></tr>
+                    <tr><td class="skill" data-skill="Божественное Озарение">Божественное Озарение</td></tr>
+                    <tr><td class="skill" data-skill="Астральный Щит">Астральный Щит</td></tr>
+                    <tr><td class="skill" data-skill="Исцеляющий Свет">Исцеляющий Свет</td></tr>
+                    <tr><td class="skill" data-skill="Магия Жизни">Магия Жизни</td></tr>
+                    <tr><td class="skill" data-skill="Светлое Проклятие">Светлое Проклятие</td></tr>
+                    <tr><td class="skill" data-skill="Сфера Защиты">Сфера Защиты</td></tr>
+                    <tr><td class="skill" data-skill="Лучи Возрождения">Лучи Возрождения</td></tr>
+                    <tr><td class="skill" data-skill="Аура Очищения">Аура Очищения</td></tr>
+                    <tr><td class="skill" data-skill="Воскрешение Души">Воскрешение Души</td></tr>
+                    <tr><td class="skill" data-skill="Тотем Исцеления">Тотем Исцеления</td></tr>
+                    <tr><td class="skill" data-skill="Трансформация Света">Трансформация Света</td></tr>
+                    <tr><td class="skill" data-skill="Светящийся Щит">Светящийся Щит</td></tr>
+                    <tr><td class="skill" data-skill="Голос Божественного Исцеления">Голос Божественного Исцеления</td></tr>
+                </table>
             </td>
 
             <td align="center" width="33%">
                 <h2>Таланты</h2>
-                <table border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
-        <tr><td>Светлый Страж</td></tr>
-        <tr><td>Регенерация Маны</td></tr>
-        <tr><td>Священная Защита</td></tr>
-        <tr><td>Великое Исцеление</td></tr>
-        <tr><td>Сила Веры</td></tr>
-        <tr><td>Возвращение Душ</td></tr>
-        <tr><td>Магия Воскрешения</td></tr>
-        <tr><td>Тотем Света</td></tr>
-    </table>
+                <table id="talents" border="1" cellpadding="5" cellspacing="0" bgcolor="#222222">
+                    <tr><td class="talent" data-talent="Божественная Мудрость">Божественная Мудрость</td></tr>
+                    <tr><td class="talent" data-talent="Светлая Стража">Светлая Стража</td></tr>
+                    <tr><td class="talent" data-talent="Аура Силы Света">Аура Силы Света</td></tr>
+                    <tr><td class="talent" data-talent="Лечение Чистым Светом">Лечение Чистым Светом</td></tr>
+                    <tr><td class="talent" data-talent="Реинкарнация">Реинкарнация</td></tr>
+                    <tr><td class="talent" data-talent="Прощение Душ">Прощение Душ</td></tr>
+                    <tr><td class="talent" data-talent="Светящийся Печать">Светящийся Печать</td></tr>
+                    <tr><td class="talent" data-talent="Слияние с Божественным">Слияние с Божественным</td></tr>
+                    <tr><td class="talent" data-talent="Сила Света">Сила Света</td></tr>
+                    <tr><td class="talent" data-talent="Гармония Силы Света">Гармония Силы Света</td></tr>
+                    <tr><td class="talent" data-talent="Безусловное Исцеление">Безусловное Исцеление</td></tr>
+                    <tr><td class="talent" data-talent="Светлая Буря">Светлая Буря</td></tr>
+                    <tr><td class="talent" data-talent="Сфера Воскрешения">Сфера Воскрешения</td></tr>
+                    <tr><td class="talent" data-talent="Световой Поток">Световой Поток</td></tr>
+                    <tr><td class="talent" data-talent="Магия Божественного Защиты">Магия Божественного Защиты</td></tr>
+                </table>
             </td>
+        </tr>
+    </table>
+
+    <div id="tooltip" style="position:absolute; background-color:#333; color:#fff; padding:10px; border-radius:5px; visibility:hidden;">
+    </div>
+
+    <div id="loading-screen">
+        <img src="https://png.pngtree.com/element_our/png_detail/20180910/skull-fire-vecto-png_88848.jpg" alt="Череп" class="skull-loader">
+    </div>
 
 </body>
+<script src="JS/script4.js" defer></script>
+<script src="JS/data4.js" defer></script>
 </html>

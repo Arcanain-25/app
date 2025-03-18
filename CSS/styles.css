@@ -5,43 +5,51 @@
     box-sizing: border-box;
 }
 
+/* Основной стиль для страницы */
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('https://i.artfile.me/wallpaper/25-04-2016/1920x1080/fentezi-pejzazhi-sakura-vishnya-derevo-c-1031364.jpg') no-repeat center/cover;
+    background: url('https://www.desktophut.com/files/dsDxaWCcmLz8yYY_Space%20Portal%20Hd%20Live%20Wallpaper.mp4') no-repeat center/cover;
     text-align: center;
-    color: white;
-    font-family: 'Arial', sans-serif;
+    color: #d4af37;
+    font-family: 'Cinzel', serif;
+    overflow: hidden;
 }
 
+/* Контейнер с содержимым */
 .container {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(10, 10, 20, 0.9);
     padding: 25px;
     border-radius: 15px;
     width: 90%;
     max-width: 500px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.6);
+    animation: fadeIn 1s ease-in-out, glow 2s infinite alternate;
+    border: 2px solid rgba(255, 223, 186, 0.5);
 }
 
+/* Заголовок */
 h1 {
     font-size: 28px;
     margin-bottom: 12px;
-    color: #eb0909;
+    color: #8b0000;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 5px 5px 8px rgba(22, 7, 228, 0.5);
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
 }
 
+/* Абзацы */
 p {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #17e7e7;
+    color: #b9f2ff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
 }
 
+/* Список */
 ul {
     list-style: none;
     padding: 0;
@@ -52,13 +60,16 @@ ul li {
     font-size: 15px;
     margin: 6px 0;
     padding: 6px;
-    background: rgba(5, 23, 180, 0.397);
+    background: rgba(20, 20, 60, 0.6);
     border-radius: 5px;
+    color: #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
 }
 
+/* Кнопка "Начать Путешествие" */
 a.button {
     display: inline-block;
-    background: linear-gradient(135deg, #ff9800, #ff5722);
+    background: linear-gradient(135deg, #5a0eeb, #ff0080);
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
@@ -66,22 +77,24 @@ a.button {
     font-weight: bold;
     font-size: 16px;
     transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.8);
 }
 
 a.button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #c70d0d, #dbc608);
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #3b0089, #ff005e);
 }
 
+/* Подвал */
 footer {
     position: absolute;
     bottom: 10px;
     font-size: 13px;
     opacity: 0.7;
-    color: #e60e0e;
+    color: #ff4500;
 }
 
-/* Animatie */
+/* Анимация */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -92,3 +105,102 @@ footer {
         transform: translateY(0);
     }
 }
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    }
+}
+
+/* Видеофон */
+#bg-video {
+    position: fixed; /* Фиксируем видео в фоне */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Видео будет растягиваться по всему экрану */
+    z-index: -1; /* Видео будет на заднем плане */
+    filter: brightness(0.4);
+}
+
+/* Стиль для помощника */
+#assistant-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Заголовок окна помощника */
+#assistant-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Сообщения помощника */
+#assistant-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Поле ввода для сообщений */
+#assistant-input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Кнопка для активации помощника */
+#assistant-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+#assistant-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Кнопка для голосового ввода */
+#voice-toggle {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#voice-toggle:hover {
+    transform: scale(1.1);
+}
+

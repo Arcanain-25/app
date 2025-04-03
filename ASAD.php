@@ -13,16 +13,16 @@
 
     <h1>Воин 1 уровня</h1>
     <p>
-        <a href="gardian.html">Профиль Некроманта</a> |
-        <a href="ASAD.html">Профиль Воина</a> |
-        <a href="Voin.html">Профиль Целителя</a> |
-        <a href="hol.html">Профиль Мага</a>
+        <a href="gardian.php">Профиль Некроманта</a> |
+        <a href="ASAD.php">Профиль Воина</a> |
+        <a href="Voin.php">Профиль Целителя</a> |
+        <a href="hol.php">Профиль Мага</a>
     </p>
 
     <p class="reveal"><i>Могущественный воин, владеющий искусством разрушения и контролем стихий.</i></p>
 
     <p>
-        <a href="helow.html">
+        <a href="helow.php">
             <img id="warrior-img" src="https://99px.ru/sstorage/53/2018/02/tmb_220030_469287.jpg" alt="Воин" width="300" border="2">
         </a>
     </p>

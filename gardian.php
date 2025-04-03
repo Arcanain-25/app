@@ -16,16 +16,16 @@
 
     <h1>Некромант 1 уровня</h1>
     <p>
-        <a href="gardian.html">Профиль Некроманта</a> |
-        <a href="ASAD.html">Профиль Воина</a> |
-        <a href="Voin.html">Профиль Целителя</a> |
-        <a href="hol.html">Профиль Мага</a>
+        <a href="gardian.php">Профиль Некроманта</a> |
+        <a href="ASAD.php">Профиль Воина</a> |
+        <a href="Voin.php">Профиль Целителя</a> |
+        <a href="hol.php">Профиль Мага</a>
     </p>
     
     <p class="reveal"><i>Мастер темных искусств, способный воскрешать мертвых и подчинять их своей воле.</i></p>
 
     <p>
-        <a href="helow.html">
+        <a href="helow.php">
             <img id="necromancer-img" src="https://masterpiecer-images.s3.yandex.net/933032c5860f11ee9d302656ee3db587:upscaled" 
                  alt="Некромант" width="300" border="2">
         </a>

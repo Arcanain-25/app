@@ -14,16 +14,16 @@
 
     <h1>Целитель 1 уровня</h1>
     <p>
-        <a href="gardian.html">Профиль Некроманта</a> |
-        <a href="ASAD.html">Профиль Воина</a> |
-        <a href="Voin.html">Профиль Целителя</a> |
-        <a href="hol.html">Профиль Мага</a>
+        <a href="gardian.php">Профиль Некроманта</a> |
+        <a href="ASAD.php">Профиль Воина</a> |
+        <a href="Voin.php">Профиль Целителя</a> |
+        <a href="hol.php">Профиль Мага</a>
     </p>
 
     <p class="reveal"><i>Маг, обладающий могущественной силой исцеления и защиты. Он использует светлую магию для восстановления здоровья союзников и защиты от темных сил.</i></p>
 
     <p>
-        <a href="helow.html">
+        <a href="helow.php">
             <img id="healer-img" src="https://dirtcheapdungeons.com/cdn/shop/articles/DALL_E_2023-12-13_07.07.48_-_An_image_of_a_wise_and_benevolent_cleric_from_a_fantasy_setting_wearing_ornate_divine-inspired_armor_that_radiates_a_soft_golden_light._The_cleric.png?v=1702469300" alt="Целитель" width="300" border="2">
         </a>
     </p>

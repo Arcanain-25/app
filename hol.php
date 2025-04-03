@@ -14,16 +14,16 @@
 
     <h1>Маг 1 уровня</h1>
     <p>
-        <a href="gardian.html">Профиль Некроманта</a> |
-        <a href="ASAD.html">Профиль Воина</a> |
-        <a href="Voin.html">Профиль Целителя</a> |
-        <a href="hol.html">Профиль Мага</a>
+        <a href="gardian.php">Профиль Некроманта</a> |
+        <a href="ASAD.php">Профиль Воина</a> |
+        <a href="Voin.php">Профиль Целителя</a> |
+        <a href="hol.php">Профиль Мага</a>
     </p>
     
     <p class="reveal"><i>Мастер магических искусств, способный манипулировать стихиями и применять древние заклинания для победы над врагами.</i></p>
 
     <p>
-        <a href="helow.html">
+        <a href="helow.php">
             <img id="mage-img" src="https://img.freepik.com/premium-photo/battlemage-magical-fantasy-setting-game-character-design_31965-104820.jpg" 
                  alt="Маг" width="300" border="2">
         </a>

@@ -1,0 +1,330 @@
+body{font-family: 'Creepster', cursive;
+    background: url('https://play.vsthemes.org/fhd/50/1050.webm') no-repeat center center fixed;
+    background-size: cover;
+    color: #e74c3c;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    }
+    
+    #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    }
+    
+    body {
+        font-family: 'Creepster', cursive;
+        background: #000;
+        color: #e74c3c;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: auto;
+      }
+      
+      #bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        margin: 60px auto;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.85);
+        border-radius: 20px;
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Левая часть */
+      .profile-left {
+        flex: 1;
+        text-align: center;
+        position: relative;
+      }
+      
+      .cross-icon {
+        font-size: 4em;
+        color: #f39c12;
+        text-shadow: 0 0 20px red;
+        margin-bottom: 20px;
+      }
+      
+      .profile-image {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+        z-index: 2;
+      }
+      
+      .avatar-frame {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .avatar-frame img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid #f39c12;
+        object-fit: cover;
+        animation: avatarPulse 3s ease-in-out infinite;
+        z-index: 2;
+        position: relative;
+      }
+      
+      @keyframes avatarPulse {
+        0% { box-shadow: 0 0 15px #f39c12, 0 0 25px #e74c3c; }
+        50% { box-shadow: 0 0 35px #f39c12, 0 0 45px #c0392b; }
+        100% { box-shadow: 0 0 15px #f39c12, 0 0 25px #e74c3c; }
+      }
+      
+      /* 🔥 Огненное кольцо */
+      .flame-ring {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        border: 3px dashed rgba(255, 100, 0, 0.6);
+        box-shadow: 0 0 20px 5px rgba(255, 100, 0, 0.3);
+        animation: flameRotate 6s linear infinite;
+        z-index: 1;
+      }
+      
+      @keyframes flameRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* 🌌 Свечение */
+      .avatar-glow {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 70%);
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+        filter: blur(6px);
+        z-index: 0;
+      }
+      
+      /* ✴️ Магические руны вокруг */
+      .magic-runes {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Creepster', cursive;
+        color: #9b59b6;
+        font-size: 1.4em;
+        letter-spacing: 8px;
+        animation: pulseRunes 3s ease-in-out infinite;
+        text-shadow: 0 0 10px #8e44ad, 0 0 20px #9b59b6;
+      }
+      
+      @keyframes pulseRunes {
+        0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+        50% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+        100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+      }
+      
+      
+      .profile-header h1 {
+        font-size: 2.8em;
+        color: #f39c12;
+        text-shadow: 0 0 25px #e74c3c, 0 0 35px #c0392b, 0 0 45px #f39c12;
+        margin: 20px 0;
+      }
+      
+      /* Таблица статов */
+      .profile-stats {
+        flex: 2;
+        padding: 20px;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      
+      th, td {
+        padding: 12px;
+        border-bottom: 1px solid #f39c12;
+        text-align: center;
+        font-size: 1.4em;
+        color: #fff;
+        text-shadow: 0 0 5px #e74c3c;
+      }
+      
+      th {
+        background-color: #8e44ad;
+        border-radius: 5px;
+      }
+      
+      /* Инвентарь */
+      .inventory {
+        flex: 2;
+        margin-left: 30px;
+      }
+      
+      .inventory h3 {
+        font-size: 1.8em;
+        color: #f39c12;
+        text-shadow: 0 0 10px #e74c3c;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #f39c12;
+        padding-bottom: 5px;
+      }
+      
+      .sector {
+        background-color: #2c3e50;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+      }
+      
+      .sector ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .sector li {
+        font-size: 1.2em;
+        color: #fff;
+        padding: 5px 0;
+        text-shadow: 0 0 5px #c0392b;
+      }
+      
+      /* Подвал */
+      footer {
+        text-align: center;
+        padding: 25px;
+        background-color: #333;
+        color: #fff;
+        font-size: 1.2em;
+        margin-top: 60px;
+      } 
+      .button-table {
+        margin-top: 20px;
+      }
+      
+      #button-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      #button-table th, #button-table td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #f39c12;
+        font-size: 1.2em;
+        color: #fff;
+      }
+      
+      .button {
+        padding: 10px 20px;
+        background-color: #f39c12;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .button:hover {
+        background-color: #c0392b;
+      }
+      
+      .button-link {
+        text-decoration: none;
+      }
+      /* Стили для всей боковой панели (если нужно) */
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  /* Стили для ссылки-кнопки */
+  .sidebar a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+  }
+  
+  /* Эффект нажатия на кнопку */
+  .sidebar a:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+  }
+  
+  /* Псевдоэлемент для анимации пульсации */
+  .sidebar a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: #f39c12;
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Эффект пульсации при наведении */
+  .sidebar a:hover:before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+  }
+  
+  /* Текст внутри кнопки */
+  .sidebar a span {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px #f39c12, 0 0 10px #e74c3c;
+  }
+  

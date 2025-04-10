@@ -26,7 +26,7 @@ $loggedIn = isset($_SESSION['username']);
             <p>Добро пожаловать, <strong><?php echo htmlspecialchars($_SESSION['username']); ?></strong>!</p>
             <a href="logout.php" class="btn">🚪 Выйти</a>
         <?php else: ?>
-            <a href="gardian.php" class="btn">🔱 Начать Путешествие</a>
+            <a href="Register.php" class="btn">🔱 Начать Путешествие</a>
         <?php endif; ?>
     </div>
 
@@ -40,22 +40,10 @@ $loggedIn = isset($_SESSION['username']);
 
     <button id="voice-toggle">🎤</button>
 
-    <div id="register-container">
-        <h2>Регистрация</h2>
-        <form id="register-form" action="register.php" method="POST">
-            <input type="text" id="username" name="username" placeholder="Имя" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="tel" id="phone" name="phone" placeholder="Телефон (необязательно)">
-            <input type="password" id="password" name="password" placeholder="Пароль" required>
-            <button type="submit">Зарегистрироваться</button>
-        </form>
-        <p id="register-message"></p>
-    </div>
+    
 
     <footer>☽ &copy; 2025 RPG Apocalypse - Все права защищены</footer>
     <script src="JS/iiss.js"></script>
 
 </body>
 </html>
-
-

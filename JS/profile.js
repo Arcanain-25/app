@@ -24,7 +24,9 @@ function generateInventory() {
         'Артефакт древней силы (Артефакт)', 
         'Сапоги скорости (Обувь)', 
         'Кристалл удачи (Артефакт)', 
-        'Пояс из драконьей кожи (Оборудование)'
+        'Пояс из драконьей кожи (Оборудование)',
+,
+        
     ];
 
     // Очистка старого инвентаря
@@ -51,3 +53,31 @@ function generateInventory() {
         inventoryList.appendChild(listItem);
     });
 }
+
+ // Функция для генерации случайных значений статистик
+ function generateRandomStats() {
+    const randomStrength = Math.floor(Math.random() * 1000) + 1; // Сила от 1 до 100
+    const randomMagic = Math.floor(Math.random() * 1000) + 1;    // Магия от 1 до 100
+    const randomStamina = Math.floor(Math.random() * 1000) + 1;  // Выносливость от 1 до 100
+    const randomLuck = Math.floor(Math.random() * 1000) + 1;     // Удача от 1 до 100
+
+    // Обновляем значения на странице
+    document.getElementById('strength').textContent = randomStrength;
+    document.getElementById('magic').textContent = randomMagic;
+    document.getElementById('stamina').textContent = randomStamina;
+    document.getElementById('luck').textContent = randomLuck;
+}
+
+// Функция для изменения статистик
+function changeStat(statId, delta) {
+    const element = document.getElementById(statId);
+    if (element) {
+        let current = parseInt(element.textContent);
+        if (!isNaN(current)) {
+            let newValue = current + delta;
+            if (newValue < 0) newValue = 0;
+            element.textContent = newValue;
+        }
+    }
+}
+

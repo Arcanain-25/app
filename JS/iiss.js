@@ -79,9 +79,18 @@ if ('webkitSpeechRecognition' in window) {
     console.log("Ваш браузер не поддерживает Web Speech API");
 }
 
+document.getElementById("username").addEventListener("input", function() {
+    let query = this.value;
+    if (query.length > 1) {
+        fetch("search_user.php?q=" + encodeURIComponent(query))
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("suggestions").innerHTML = data;
+            });
+    } else {
+        document.getElementById("suggestions").innerHTML = "";
+    }
+});
 
 
-
-
-
-
+// chat.js

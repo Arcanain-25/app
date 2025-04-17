@@ -61,10 +61,10 @@ if (!isset($_SESSION['user_id'])) {
               <td><a href="" class="button-link"><button class="button">Перейти</button></a></td>
             </tr>
             <tr>
-            <tr>
-              <td>Профиль Целитель </td>
+              <td>Профиль Целителя</td>
               <td><a href="Voin.php" class="button-link"><button class="button">Перейти</button></a></td>
             </tr>
+            <tr>
               <td>История</td>
               <td><a href="hol.php" class="button-link"><button class="button">Перейти</button></a></td>
             </tr>
@@ -72,7 +72,6 @@ if (!isset($_SESSION['user_id'])) {
               <td>Регистрация</td>
               <td><a href="Register.php" class="button-link"><button class="button">Зарегистрироваться</button></a></td>
             </tr>
-            
           </tbody>
         </table>
       </div>
@@ -82,12 +81,62 @@ if (!isset($_SESSION['user_id'])) {
     <div class="profile-stats">
       <h2>Статы персонажа</h2>
       <table>
-        <tr><th>Характеристика</th><th>Значение</th></tr>
-        <tr><td>Уровень</td><td>66</td></tr>
-        <tr><td>Сила</td><td>999</td></tr>
-        <tr><td>Магия</td><td>666</td></tr>
-        <tr><td>Выносливость</td><td>420</td></tr>
-        <tr><td>Удача</td><td>13</td></tr>
+        <tr>
+          <th>Характеристика</th>
+          <th>Значение</th>
+        </tr>
+        <tr>
+          <td>Уровень</td>
+          <td>66</td>
+        </tr>
+        
+        <!-- Сила -->
+        <tr>
+          <td>Сила</td>
+          <td>
+            <button onclick="changeStat('strength', -1)">−</button>
+            <span id="strength">999</span>
+            <button onclick="changeStat('strength', 1)">+</button>
+          </td>
+        </tr>
+
+        <!-- Магия -->
+        <tr>
+          <td>Магия</td>
+          <td>
+            <button onclick="changeStat('magic', -1)">−</button>
+            <span id="magic">666</span>
+            <button onclick="changeStat('magic', 1)">+</button>
+          </td>
+        </tr>
+
+        <!-- Выносливость -->
+        <tr>
+          <td>Выносливость</td>
+          <td>
+            <button onclick="changeStat('stamina', -1)">−</button>
+            <span id="stamina">420</span>
+            <button onclick="changeStat('stamina', 1)">+</button>
+          </td>
+        </tr>
+
+        <!-- Удача -->
+        <tr>
+          <td>Удача</td>
+          <td>
+            <button onclick="changeStat('luck', -1)">−</button>
+            <span id="luck">13</span>
+            <button onclick="changeStat('luck', 1)">+</button>
+          </td>
+        </tr>
+
+        <!-- Кнопка для генерации случайных статистик -->
+        <tr>
+          <td>Генерация статистики</td>
+          <td>
+            <button onclick="generateRandomStats()">Сгенерировать</button>
+          </td>
+        </tr>
       </table>
 
       <!-- Инвентарь -->
@@ -126,7 +175,7 @@ if (!isset($_SESSION['user_id'])) {
           <h4>🎲 Случайный Лут</h4>
           <ul id="inventory"></ul>
           <button class="skull-button" onclick="generateInventory()">
-           
+            Сгенерировать Лут
           </button>
         </div>
       </div>
@@ -140,4 +189,6 @@ if (!isset($_SESSION['user_id'])) {
 
   <script src="JS/profile.js" defer></script>
 </body>
+
 </html>
+

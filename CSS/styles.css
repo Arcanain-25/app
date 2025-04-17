@@ -203,4 +203,262 @@ footer {
 #voice-toggle:hover {
     transform: scale(1.1);
 }
+/* Стили для формы поиска */
+.search-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#search-query {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стили для отображения результатов */
+#results-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    display: none;
+    max-width: 300px;
+}
+.result-item {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+    /* Немного стилей для кнопок и вывода результатов */
+    .vote-container {
+        text-align: center;
+    }
+
+    .vote-button {
+        background-color: #8e44ad;
+        border: 2px solid #8e44ad;
+        padding: 20px 40px;
+        font-size: 24px;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+        position: relative;
+        margin: 10px;
+    }
+
+    .vote-button:hover {
+        background-color: #d60c0c;
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .vote-button:before {
+        content: "✨";
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        opacity: 0.5;
+    }
+
+    .vote-button:active {
+        background-color: #8e44ad;
+        transform: scale(0.95);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .vote-count {
+        margin-top: 20px;
+        font-size: 32px;
+        color: #ecf0f1;
+    }
+    
+    /* Подключаем шрифт для фэнтези */
+/* Подключаем шрифт для фэнтези */
+/* Подключаем древний шрифт */
+/* Подключаем шрифт с темным фэнтезийным стилем */
+
+#notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+.notification {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ff6347;  /* Красный цвет для уведомлений */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+     /* Стили для поля ввода */
+     .search-container {
+        position: absolute;
+        top: 20px; /* Располагаем в верхнем левом углу */
+        left: 20px;
+        z-index: 10;}
+
+    #searchInput {
+        width: 300px;
+        padding: 12px;
+        border-radius: 25px;
+        border: 2px solid #f39c12;
+        background-color: #333;
+        color: #fff;
+        font-size: 16px;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+    #searchInput:focus {
+        border-color: #ff6f00;
+        box-shadow: 0 0 8px rgba(255, 111, 0, 0.8);
+    }
+    #searchInput::placeholder {
+        color: #bbb;
+    }
+
+    /* Стили для результатов */
+    /* Стили для результатов */
+/* Стили для результатов */
+/* Стили для контейнера с результатами */
+/* Стили для результатов */
+/* Стили для результатов */
+/* Стили для результатов */
+
+/* Контейнер с магическими ответами */
+/* Отдельный контейнер только для ответов */
+#answerContainer {
+    position: absolute;
+    top: 100px; /* как и было */
+    left: 0; /* теперь вплотную к левому краю */
+    transform: translateX(-75px); /* чуть выступает за границу, если нужно */
+    width: 100%;
+    max-width: 550px;
+    z-index: 100;
+}
+
+/* Стили для таблицы подсказок */
+#answerContainer .tooltip-table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Строки таблицы */
+#answerContainer tr {
+    background-color: #34495e;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards, slideIn 0.6s ease-out forwards;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Ячейки */
+#answerContainer td {
+    padding: 12px 20px;
+    display: block;
+}
+
+/* Наведение */
+#answerContainer tr:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); }
+    to { transform: translateY(0); }
+}
+
+/* Стили для имени пользователя */
+#answerContainer strong {
+    color: #f39c12;
+}
+
+/* Tooltip */
+#answerContainer .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+#answerContainer .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 260px;
+    background: linear-gradient(135deg, #2c3e50, #1a252f);
+    color: #f1f1f1;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    font-size: 14px;
+    font-family: 'Cinzel', serif;
+    position: absolute;
+    z-index: 1000;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+#answerContainer .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #1a252f transparent transparent transparent;
+}
+
+#answerContainer .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
